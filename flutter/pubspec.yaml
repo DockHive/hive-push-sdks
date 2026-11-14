@@ -1,0 +1,25 @@
+name: hive_push
+description: Hive Push for Flutter. Native iOS (APNs) and Android (FCM) push notifications, user targeting, tags, open tracking and a live in-app inbox.
+version: 0.1.0
+homepage: https://dockhive.io/push
+documentation: https://docs.dockhive.io/push/
+topics:
+  - push-notifications
+  - notifications
+  - inbox
+
+environment:
+  sdk: ^3.6.0
+  flutter: '>=3.27.0'
+
+dependencies:
+  firebase_messaging: '>=15.2.0 <17.0.0'
+  flutter:
+    sdk: flutter
+  http: ^1.5.0
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
