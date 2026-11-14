@@ -1,0 +1,5 @@
+# JitPack builds the Android library from android/ when someone asks for a tag.
+jdk:
+  - openjdk17
+install:
+  - cd android && ./gradlew publishToMavenLocal -x test
