@@ -14,7 +14,14 @@ registration answers `platform_not_configured`. Then set up Firebase in the app 
 `google-services.json` from the Firebase console into `app/`) and add:
 
 ```kotlin
-// settings.gradle.kts: mavenCentral() and google() in repositories
+// settings.gradle.kts
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://docs.dockhive.io/maven")
+    }
+}
 
 // build.gradle.kts (project)
 plugins {
